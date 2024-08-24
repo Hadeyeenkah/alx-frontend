@@ -1,3 +1,11 @@
+/* Import Normalize.css */
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+/* Universal Box Sizing Rule */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 /* Global/Root Styles */
 
 /* Define custom properties in the root element */
@@ -64,6 +72,12 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: var(--font-weight-bold);
 }
 
+/* Set text color for all anchor elements and remove text decoration */
+a {
+    color: var(--text-color);
+    text-decoration: none; /* Remove text decoration from anchor elements */
+}
+
 /* Component/Specific Styles */
 
 /* Hide all elements with the class visually-hidden */
@@ -100,22 +114,21 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Styling for anchor elements containing a hyperlink */
 a[href] {
-    color: var(--text-color);
-    text-decoration: none;
+    color: var(--text-color); /* Use the text color variable */
+    text-decoration: none;    /* Remove default text decoration */
 }
 
-/* Styling for visited state of the link */
+/* Target the visited state for the link */
 a[href]:visited {
-    font-style: italic;
+    font-style: italic; /* Italicize the text */
 }
 
-/* Styling for hover state of the link */
+/* Target the hover state for the link */
 a[href]:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline the text on hover */
 }
 
-/* Styling for active state of the link */
+/* Target the active state for the link */
 a[href]:active {
-    background-color: var(--color-light-grey);
+    background-color: var(--color-light-grey); /* Set background color for active state */
 }
-

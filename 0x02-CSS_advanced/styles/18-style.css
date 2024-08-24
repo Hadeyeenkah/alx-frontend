@@ -17,7 +17,7 @@
     --color-light-grey: #f3f3f3;
     --color-dark-grey: #353535;
     --text-color: var(--color-black);
-    
+
     /* Font Family Variables */
     --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -48,21 +48,13 @@
     --section-title-margin: 0;
     --section-title-color: var(--color-black);
 
-    /* Padding Variables */
-    --section-padding: 5rem 0;
-    --section-header-padding: 0 0 3rem;
-    --section-body-padding: 0 0 3rem;
-    --section-footer-padding: 3rem 0 0;
-    --section-footer-align: center;
-    --footer-padding: 5rem 0 1rem;
-
     /* Navigation Properties */
     --nav-item-font-family: var(--font-family-title);
     --nav-item-font-weight: var(--font-weight-bold);
     --nav-item-font-size: var(--font-size-medium);
-    --nav-item-letter-spacing: 0.1rem;
+    --nav-item-letter-spacing: 0.4rem; /* 4% of root element's font size (1.6rem * 0.04) */
     --nav-item-display: inline-block;
-    --nav-item-margin: 0 1rem;
+    --nav-item-margin: 0 0 0.6rem; /* 3 times the root element's font size */
     --nav-item-link-hover: var(--color-primary);
 }
 
@@ -91,48 +83,42 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Component/Specific Styles */
 
-/* Hide all elements with the class visually-hidden */
-.visually-hidden {
-    display: none;
+/* Style for navbar-menu class */
+.navbar-menu {
+    float: right;
 }
 
-/* Set padding for the section class */
-.section {
-    padding: var(--section-padding);
+/* Style for nav class */
+nav {
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
-/* Set horizontal alignment for elements with the class section-header */
-.section-header {
-    text-align: var(--section-header-align);
-    padding: var(--section-header-padding);
+/* Remove list styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-/* Set padding for the section-body class */
-.section-body {
-    padding: var(--section-body-padding);
+/* Style for nav-item class */
+nav .nav-item {
+    font-family: var(--nav-item-font-family);
+    font-weight: var(--nav-item-font-weight);
+    font-size: var(--nav-item-font-size);
+    letter-spacing: var(--nav-item-letter-spacing);
+    display: var(--nav-item-display);
+    margin: var(--nav-item-margin);
 }
 
-/* Set padding and alignment for the section-footer class */
-.section-footer {
-    padding: var(--section-footer-padding);
-    text-align: var(--section-footer-align);
+/* Style for nav-link class */
+nav .nav-link {
+    display: block;
+    padding: calc(62.5% / 2) 62.5%; /* Top and bottom padding are half of the root element's font size; left and right are equal to the root element's font size */
 }
 
-/* Style the section-title class */
-.section-title {
-    font-family: var(--font-family-title);
-    font-size: var(--font-size-xx-large);
-    font-weight: var(--font-weight-bold);
-    margin: var(--section-title-margin);
-    color: var(--section-title-color);
+/* Hover state for nav-link class */
+nav .nav-link:hover {
+    color: var(--nav-item-link-hover);
 }
-
-/* Set foreground color for all elements with the class card-category */
-.card-category {
-    color: var(--color-primary);
-}
-
-/* Set font-family, font-weight, and text-transform for elements with the class section-tagline */
-.section-tagline {
-    font-family: var(--
-
