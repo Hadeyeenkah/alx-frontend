@@ -1,0 +1,263 @@
+/* Combined styles including styles/21-style.css */
+
+/* Import Normalize.css */
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+/* Universal Box Sizing Rule */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Global/Root Styles */
+
+/* Define custom properties in the root element */
+:root {
+    /* Color Variables */
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+    
+    /* Font Family Variables */
+    --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    /* Font Size Variables */
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+
+    /* Font Weight Variables */
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    /* Line-Height Variables */
+    --line-height-small: 1.2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+
+    /* Alignment Variables */
+    --section-header-align: center;
+
+    /* Text Transform Variables */
+    --section-tagline-transform: uppercase;
+
+    /* Section Title Properties */
+    --section-title-margin: 0;
+    --section-title-color: var(--color-black);
+
+    /* Padding Variables */
+    --section-padding: 5rem 0;
+    --section-header-padding: 0 0 3rem;
+    --section-body-padding: 0 0 3rem;
+    --section-footer-padding: 3rem 0 0;
+    --section-footer-align: center;
+    --footer-padding: 5rem 0 1rem;
+
+    /* Navigation Properties */
+    --nav-item-font-family: var(--font-family-title);
+    --nav-item-font-weight: var(--font-weight-bold);
+    --nav-item-font-size: var(--font-size-medium);
+    --nav-item-letter-spacing: 0.1rem;
+    --nav-item-display: inline-block;
+    --nav-item-margin: 0 1rem;
+    --nav-item-link-hover: var(--color-primary);
+
+    /* Section Tagline Properties */
+    --section-tagline-margin: 0;
+}
+
+/* Global Styling */
+
+/* Set font size of the html element to 62.5% of the normal size */
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+/* Set font-family, font-weight, and line-height for the body */
+body {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-regular);
+    color: var(--text-color);
+    line-height: var(--line-height-base); /* Set line-height for the body */
+}
+
+/* Set font-family and font-weight for all 6 levels of section headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-bold);
+}
+
+/* Component/Specific Styles */
+
+/* Hide all elements with the class visually-hidden */
+.visually-hidden {
+    display: none;
+}
+
+/* Set padding for the section class */
+.section {
+    padding: var(--section-padding);
+}
+
+/* Set horizontal alignment for elements with the class section-header */
+.section-header {
+    text-align: var(--section-header-align);
+    padding: var(--section-header-padding);
+}
+
+/* Set padding for the section-body class */
+.section-body {
+    padding: var(--section-body-padding);
+}
+
+/* Set padding and alignment for the section-footer class */
+.section-footer {
+    padding: var(--section-footer-padding);
+    text-align: var(--section-footer-align);
+}
+
+/* Style the section-title class */
+.section-title {
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-xx-large);
+    font-weight: var(--font-weight-bold);
+    margin: var(--section-title-margin);
+    color: var(--section-title-color);
+}
+
+/* Set foreground color for all elements with the class card-category */
+.card-category {
+    color: var(--color-primary);
+}
+
+/* Set font-family, font-weight, and text-transform for elements with the class section-tagline */
+.section-tagline {
+    font-family: var(--font-family-title);
+    text-transform: var(--section-tagline-transform); /* Transform text using custom property */
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    margin: var(--section-tagline-margin); /* Set margin using custom property */
+}
+
+/* New styles added for the container class */
+.container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styling for anchor elements containing a hyperlink */
+a[href] {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* Styling for visited state of the link */
+a[href]:visited {
+    font-style: italic;
+}
+
+/* Styling for hover state of the link */
+a[href]:hover {
+    text-decoration: underline;
+}
+
+/* Styling for active state of the link */
+a[href]:active {
+    background-color: var(--color-light-grey);
+}
+
+/* Set padding for the footer class */
+.footer {
+    padding: var(--footer-padding);
+}
+
+/* Style for navbar-menu class */
+.navbar-menu {
+    float: right;
+}
+
+/* Style for nav class */
+nav {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Remove list styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style for nav-item class */
+nav .nav-item {
+    font-family: var(--nav-item-font-family);
+    font-weight: var(--nav-item-font-weight);
+    font-size: var(--nav-item-font-size);
+    letter-spacing: var(--nav-item-letter-spacing);
+    display: var(--nav-item-display);
+    margin: var(--nav-item-margin);
+}
+
+/* Style for nav-link class */
+nav .nav-link {
+    display: block;
+    padding: calc(62.5% / 2) 62.5%;
+}
+
+/* Hover state for nav-link class */
+nav .nav-link:hover {
+    color: var(--nav-item-link-hover);
+}
+
+/* Set margins and padding for all ul elements with the class row */
+ul.row {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Style for col-1-3 class */
+.col-1-3 {
+    width: 33.33%;
+}
+
+/* Style for col-1-2 class */
+.col-1-2 {
+    width: 50%;
+}
+
+/* Style for footer-copyright class */
+.footer-copyright {
+    margin: 0;
+    font-size: var(--font-size-small);
+    color: var(--text-color);
+}
+
+/* Align text to the right for all ul tags in the footer class */
+.footer ul {
+    text-align: right;
+}
+
+/* Create a new row after each instance of the class row */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Target all classes that start with col- */
+[class^="col-"] {
+    float: left;
+    padding: calc(62.5% / 2);
+}
+
