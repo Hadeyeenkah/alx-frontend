@@ -1,0 +1,127 @@
+/* From 1-style.css */
+/* Enable smooth scrolling behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* From 2-style.css */
+/* Set text color for the body */
+body {
+    color: #161616;
+}
+
+/* Set text color for all anchor elements */
+a {
+    color: #161616;
+}
+
+/* Hide all elements with the class visually-hidden */
+.visually-hidden {
+    display: none;
+}
+
+/* Set foreground color for all elements with the class card-category */
+.card-category {
+    color: #D73953;
+}
+
+/* Set foreground color for all elements with the class section-tagline */
+.section-tagline {
+    color: #D73953;
+}
+
+/* From 3-style.css */
+/* Define custom properties in the root element */
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+}
+
+/* Set text color for the body using the custom property */
+body {
+    color: var(--text-color);
+}
+
+/* Set text color for all anchor elements using the custom property */
+a {
+    color: var(--text-color);
+}
+
+/* Ensure all elements with the class visually-hidden are hidden */
+.visually-hidden {
+    display: none;
+}
+
+/* Set foreground color for all elements with the class card-category using the custom property */
+.card-category {
+    color: var(--color-primary);
+}
+
+/* Set foreground color for all elements with the class section-tagline using the custom property */
+.section-tagline {
+    color: var(--color-primary);
+}
+
+/* From 4-style.css */
+/* Define custom font-family properties in the root element */
+:root {
+    --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Set body font-family to font-family-base */
+body {
+    font-family: var(--font-family-base);
+}
+
+/* Set font-family for all 6 levels of section headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title);
+}
+
+/* Set text color for all anchor elements using the custom property */
+a {
+    color: var(--text-color);
+}
+
+/* From 5-style.css */
+/* Define custom font-size properties in the root element */
+:root {
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+}
+
+/* Set font size of the html element to 62.5% of the normal size */
+html {
+    font-size: 62.5%;
+}
+
+/* Set body font size to font-size-medium */
+body {
+    font-size: var(--font-size-medium);
+}
+
+/* New code for 6-style.css */
+/* Define custom font-weight properties in the root element */
+:root {
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+}
+
+/* Set font-weight for the body to font-weight-regular */
+body {
+    font-weight: var(--font-weight-regular);
+}
+
+/* Set font-weight for all 6 levels of section headings to font-weight-bold */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--font-weight-bold);
+}
+

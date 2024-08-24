@@ -1,0 +1,90 @@
+/* From 1-style.css */
+/* Enable smooth scrolling behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* From 2-style.css */
+/* Set text color for the body */
+body {
+    color: #161616;
+}
+
+/* Set text color for all anchor elements */
+a {
+    color: #161616;
+}
+
+/* Hide all elements with the class visually-hidden */
+.visually-hidden {
+    display: none;
+}
+
+/* Set foreground color for all elements with the class card-category */
+.card-category {
+    color: #D73953;
+}
+
+/* Set foreground color for all elements with the class section-tagline */
+.section-tagline {
+    color: #D73953;
+}
+
+/* From 3-style.css */
+/* Define custom properties in the root element */
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+}
+
+/* Set text color for the body using the custom property */
+body {
+    color: var(--text-color);
+}
+
+/* Set text color for all anchor elements using the custom property */
+a {
+    color: var(--text-color);
+}
+
+/* Ensure all elements with the class visually-hidden are hidden */
+.visually-hidden {
+    display: none;
+}
+
+/* Set foreground color for all elements with the class card-category using the custom property */
+.card-category {
+    color: var(--color-primary);
+}
+
+/* Set foreground color for all elements with the class section-tagline using the custom property */
+.section-tagline {
+    color: var(--color-primary);
+}
+
+/* New code for 4-style.css */
+/* Define custom font-family properties in the root element */
+:root {
+    --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Set body font-family to font-family-base */
+body {
+    font-family: var(--font-family-base);
+}
+
+/* Set font-family for all 6 levels of section headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title);
+}
+
+/* Set text color for all anchor elements using the custom property */
+a {
+    color: var(--text-color);
+}
+
