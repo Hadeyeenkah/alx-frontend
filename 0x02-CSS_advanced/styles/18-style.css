@@ -60,10 +60,10 @@
     --nav-item-font-family: var(--font-family-title);
     --nav-item-font-weight: var(--font-weight-bold);
     --nav-item-font-size: var(--font-size-medium);
-    --nav-item-letter-spacing: 0.4rem; /* 4% of root element's font size (1.6rem * 0.04) */
+    --nav-item-letter-spacing: 0.4rem; /* 4% of the root element's font size */
     --nav-item-display: inline-block;
     --nav-item-margin: 0 0 0.6rem; /* 3 times the root element's font size */
-    --nav-item-link-hover: var(--color-primary;
+    --nav-item-link-hover: var(--color-primary);
 }
 
 /* Global Styling */
@@ -147,33 +147,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: auto;
 }
 
-/* Styling for anchor elements containing a hyperlink */
-a[href] {
-    color: var(--text-color);
-    text-decoration: none;
-}
-
-/* Styling for visited state of the link */
-a[href]:visited {
-    font-style: italic;
-}
-
-/* Styling for hover state of the link */
-a[href]:hover {
-    text-decoration: underline;
-}
-
-/* Styling for active state of the link */
-a[href]:active {
-    background-color: var(--color-light-grey);
-}
-
-/* Set padding for the footer class */
-.footer {
-    padding: var(--footer-padding);
-}
-
-/* Style for navbar-menu class */
+/* Styling for navbar-menu class */
 .navbar-menu {
     float: right;
 }
