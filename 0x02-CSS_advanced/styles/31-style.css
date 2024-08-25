@@ -1,0 +1,16 @@
+/* Targeting the card-quote inside card-testimonial */
+.card-testimonial .card-quote {
+    position: relative; /* Style it so that the position is relative to its parent */
+}
+
+/* Targeting the before pseudo-element of card-quote inside card-testimonial */
+.card-testimonial .card-quote::before {
+    content: "\201C"; /* Set content to the value \201C */
+    position: absolute; /* Absolutely position the selected elements */
+    top: -4.5rem; /* Set the vertical position */
+    left: -1rem; /* Set the horizontal position from the left */
+    color: #efeded; /* Set the foreground color */
+    font-size: 10rem; /* Set the size of fonts */
+    z-index: -1; /* Set the z-order */
+}
+
