@@ -1,134 +1,19 @@
-/* Import Normalize.css */
-@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
-
-/* Universal Box Sizing Rule */
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
-/* Global/Root Styles */
-
-/* Define custom properties in the root element */
-:root {
-    /* Color Variables */
-    --color-primary: #d73953;
-    --color-black: #090909;
-    --color-white: #ffffff;
-    --color-light-grey: #f3f3f3;
-    --color-dark-grey: #353535;
-    --text-color: var(--color-black);
-    
-    /* Font Family Variables */
-    --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-    /* Font Size Variables */
-    --font-size-small: 1.2rem;
-    --font-size-medium: 1.6rem;
-    --font-size-large: 1.8rem;
-    --font-size-x-large: 2.3rem;
-    --font-size-xx-large: 4.8rem;
-
-    /* Font Weight Variables */
-    --font-weight-regular: 400;
-    --font-weight-bold: 700;
-
-    /* Line-Height Variables */
-    --line-height-small: 1.2;
-    --line-height-base: 1.5;
-    --line-height-big: 1.8;
-
-    /* Alignment Variables */
-    --section-header-align: center;
-
-    /* Text Transform Variables */
-    --section-tagline-transform: uppercase;
-
-    /* Section Title Properties */
-    --section-title-margin: 0;
-    --section-title-color: var(--color-black);
-}
-
-/* Global Styling */
-
-/* Set font size of the html element to 62.5% of the normal size */
-html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-}
-
-/* Set font-family, font-weight, and line-height for the body */
-body {
-    font-family: var(--font-family-base);
-    font-size: var(--font-size-medium);
-    font-weight: var(--font-weight-regular);
-    color: var(--text-color);
-    line-height: var(--line-height-base); /* Set line-height for the body */
-}
-
-/* Set font-family and font-weight for all 6 levels of section headings */
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-family-title);
-    font-weight: var(--font-weight-bold);
-}
-
-/* Set text color for all anchor elements and remove text decoration */
-a {
-    color: var(--text-color);
-    text-decoration: none; /* Remove text decoration from anchor elements */
-}
-
-/* Component/Specific Styles */
-
-/* Hide all elements with the class visually-hidden */
-.visually-hidden {
-    display: none;
-}
-
-/* Set horizontal alignment for elements with the class section-header */
-.section-header {
-    text-align: var(--section-header-align);
-}
-
-/* Style the section-title class */
-.section-title {
-    font-family: var(--font-family-title);
-    font-size: var(--font-size-xx-large);
-    font-weight: var(--font-weight-bold);
-    margin: var(--section-title-margin);
-    color: var(--section-title-color);
-}
-
-/* Set foreground color for all elements with the class card-category */
-.card-category {
-    color: var(--color-primary);
-}
-
-/* Set font-family, font-weight, and text-transform for elements with the class section-tagline */
-.section-tagline {
-    font-family: var(--font-family-title);
-    text-transform: var(--section-tagline-transform); /* Transform text using custom property */
-    font-weight: var(--font-weight-bold);
-    color: var(--color-primary);
-}
-
-/* Styling for anchor elements containing a hyperlink */
+/* Target all anchor elements containing hyperlinks */
 a[href] {
-    color: var(--text-color); /* Use the text color variable */
-    text-decoration: none;    /* Remove default text decoration */
+    /* Base styles for links, if any */
 }
 
-/* Target the visited state for the link */
+/* Visited state */
 a[href]:visited {
-    font-style: italic; /* Italicize the text */
+    font-style: italic;
 }
 
-/* Target the hover state for the link */
+/* Hover state */
 a[href]:hover {
-    text-decoration: underline; /* Underline the text on hover */
+    text-decoration: underline;
 }
 
-/* Target the active state for the link */
+/* Active state */
 a[href]:active {
-    background-color: var(--color-light-grey); /* Set background color for active state */
+    background-color: var(--color-light-grey);
 }
