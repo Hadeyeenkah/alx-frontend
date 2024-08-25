@@ -1,13 +1,57 @@
+/* Define custom font-family properties in the root element */
 :root {
-    --font-family-base: "Open Sans", "Arial", "Helvetica", sans-serif;
-    --font-family-title: "Raleway", "Georgia", "Times New Roman", serif;
+    --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --text-color: #333; /* Example color, adjust as needed */
+    --font-size-medium: 16px; /* Example size, adjust as needed */
+    --font-size-x-large: 24px; /* Example size, adjust as needed */
+    --font-weight-regular: 400; /* Regular weight */
+    --font-weight-bold: 700; /* Bold weight */
+    --color-primary: #007BFF; /* Primary color, adjust as needed */
 }
 
-/* Example usage in your CSS */
+/* Set body font-family to font-family-base */
 body {
     font-family: var(--font-family-base);
+    color: var(--text-color);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-regular);
+    /* Other styles for the body can go here */
 }
 
+/* Set font-family for all 6 levels of section headings */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);
+    font-size: var(--font-size-x-large); /* Example size, adjust as necessary */
+    font-weight: var(--font-weight-bold);
+    /* Other styles for headings can go here */
 }
+
+/* Smooth scrolling behavior for the whole document */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Link styles */
+a {
+    color: var(--text-color);
+    text-decoration: none; /* Example: removes underline from links */
+}
+
+/* Visually hidden content (useful for accessibility) */
+.visually-hidden {
+    display: none;
+}
+
+/* Styles for card categories */
+.card-category {
+    color: var(--color-primary);
+}
+
+/* Styles for section taglines */
+.section-tagline {
+    color: var(--color-primary);
+}
+
+/* Additional styles from previous updates */
+/* (You can add more styles below as needed) */
