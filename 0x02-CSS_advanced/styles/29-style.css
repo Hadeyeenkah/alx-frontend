@@ -1,24 +1,21 @@
-Based on styles/28-style.css
+/* Edit the nav-item-link-hover property */
+:root {
+    --nav-item-link-hover: var(--color-white);
+}
 
-Edit the nav-item-link-hover property by setting its value to the color-whitevariable
+/* Target the before pseudo elements of nav-link inside the nav */
+.nav .nav-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-white);
+    width: 0;
+    height: 20%;
+}
 
-Target the before pseudo elements of nav-link that is inside the nav
-
-Set the values of these elements to empty using content
-Absolutely position the targeted elements
-Set the vertical position to 0
-The horizontal position of the targeted elements should be 0
-Set the color of the background color of the targeted elements to the value color-white
-The width of the targeted elements should be set to 0
-Set the height to 20% of the root element value
-Target the before pseudo elements of nav-link when nav-item is hover and is inside nav
-
-Set the background color of the elements to the variable color-primary
-Set the width of the elements to 100%
-Does not have to pass w3c
-
-Repo:
-
-GitHub repository: alx-frontend
-Directory: 0x02-CSS_advanced
-File: styles/29-style.css
+/* Target the before pseudo elements of nav-link when nav-item is hover inside nav */
+.nav .nav-item:hover .nav-link::before {
+    background-color: var(--color-primary);
+    width: 100%;
+}
